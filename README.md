@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/thisma-labs/.github/main/profile/banner.svg" alt="Thisma Labs" width="100%"/>
+<img src="https://raw.githubusercontent.com/thisma-labs/thisma-labs/main/banner.svg" alt="Thisma Labs" width="100%"/>
 
 <br/>
 
