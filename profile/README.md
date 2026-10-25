@@ -1,111 +1,56 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/thisma-labs/.github/main/profile/banner.svg" alt="Thisma Labs" width="100%"/>
+<img src="https://raw.githubusercontent.com/thisma-labs/.github/main/profile/hero.svg" alt="Thisma Labs" width="100%"/>
 
 <br/>
 
-[![Beside](https://img.shields.io/badge/Beside-v0.1.0-22d3ee?style=flat-square)](https://github.com/thisma-labs/beside/releases/latest)
-[![Windows](https://img.shields.io/badge/Windows-10%20|%2011-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/thisma-labs/beside/releases/latest)
-[![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](https://github.com/thisma-labs/beside/releases/latest)
-[![TLS](https://img.shields.io/badge/TLS-1.3%20mutual-10b981?style=flat-square)](https://github.com/thisma-labs/beside/blob/main/SECURITY.md)
-[![Made in](https://img.shields.io/badge/made%20in-Sri%20Lanka-f59e0b?style=flat-square)](https://github.com/thisma-labs)
+**We build small, fast software that keeps your data on your own devices.**
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-thisma--labs-15efe4?style=flat-square&logo=github&logoColor=black)](https://github.com/thisma-labs)
+[![Store](https://img.shields.io/badge/Store-Gumroad-ff90e8?style=flat-square&logo=gumroad&logoColor=black)](https://thismalabs.gumroad.com)
+[![Mirror](https://img.shields.io/badge/Mirror-SourceForge-ff6600?style=flat-square&logo=sourceforge&logoColor=white)](https://sourceforge.net/projects/beside-app/)
+[![Location](https://img.shields.io/badge/Made%20in-Sri%20Lanka-f59e0b?style=flat-square)](https://github.com/thisma-labs)
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/thisma-labs/.github/main/profile/card.svg" alt="thisma-labs@earth" width="100%"/>
 
 </div>
 
-```text
-  ▄▄████████████████████▄▄
- ██████████████████████████
-           ████         ████           thisma-labs@earth
-           ████       ▄████            ─────────────────────────────────
-           ████     ▄████▀             Org        Thisma Labs
-           ████   ▄████▀▄▄             Origin     Sri Lanka
-           ████  ████▀ ▄███            Craft      local-first software
-           ██▀ ▄████    ▀███▄          Flagship   Beside  •—◎
-           ▀ ▄████▀      ▀███▄         Platforms  Windows 10/11 · Android 8+
-           ▄████▀          ████        Transport  mutual TLS 1.3 · pinned keys
-         ▄████▀▄██████████▄ ▀███▄      Transfers  LAN only · no cloud relay
-       ▄████▀▄██████████████ ▀███▄     Accounts   none
-      ▄███▀                   ▀███▄    Tracking   zero
-      ████▄▄                    ███    Status     v0.1.0 · shipping
-       ▀▀▀▀                      ▀▀
-```
+<br/>
 
-## `•—◎` Beside
+## Who we are
 
-> **Send it. It's there.**
-> Direct file, folder and text sharing between **Windows** and **Android**, over your own Wi-Fi.
-> No cloud. No accounts. No tracking.
+Thisma Labs is a software lab based in Sri Lanka. We make tools that run on your own devices, talk to each other directly, and stay out of your way. No accounts to create, no servers in the middle, nothing quietly phoning home.
 
-<div align="center">
-<a href="https://github.com/thisma-labs/beside">
-<img src="https://github.com/thisma-labs/beside/raw/main/assets/beside-hero.png" alt="Beside: wire-speed local peer sharing" width="85%"/>
-</a>
-</div>
-
-### How a transfer works
-
-```text
-  WINDOWS PC                                              ANDROID PHONE
-  ──────────                                              ─────────────
-      │  1  discover   _beside._tcp.local.  (or QR / IP)       │
-      │ ─────────────────────────────────────────────────────► │
-      │  2  handshake  mutual TLS 1.3 · pinned SPKI SHA-256    │
-      │ ◄════════════════════════════════════════════════════► │
-      │  3  verify     8-digit SAS shown on both screens       │
-      │ ◄─────────────────── match? ─────────────────────────► │
-      │  4  stream     64 KB buffer · SHA-256 · .part → final  │
-      │ ═════════════════════════════════════════════════════► │
-      │                                                        │
-      └──────────── your Wi-Fi. nothing leaves it. ────────────┘
-```
+## What we believe
 
 | | |
 |:--|:--|
-| ⚡ **Wire-speed** | Gigabit-class LAN transfers over Wi-Fi, hotspot or USB tethering |
-| 🔐 **Mutual TLS 1.3** | `rustls` + `ring`, with pinned device-key fingerprints |
-| 🛡️ **SAS pairing** | 8-digit code derived from the TLS exporter to defeat MITM on public Wi-Fi |
-| 🗝️ **Keys at rest** | Windows DPAPI and Android Keystore (AES-256-GCM) |
-| 🪶 **Flat memory** | Multi-GB files stream through a bounded 64 KB buffer |
-| 📡 **Zero-config** | Automatic local discovery, with QR and manual IP fallback |
+| **Local-first**<br/>Your devices talk to each other. We are never in the middle. | **Private by default**<br/>No accounts, no tracking, no data of yours for us to lose. |
+| **Verifiable**<br/>Signed releases, published checksums and a public security policy. | **Small and fast**<br/>Lean installers, flat memory use, no background bloat. |
 
-### Free vs Pro
-
-| | **Free** | **Pro** · $14.99 lifetime · 3 devices |
-|:--|:--:|:--:|
-| Outgoing file size | 1 MB | **Unlimited** |
-| Files per transfer | 1 | **Unlimited batches** |
-| Folders | ✕ | **Full trees, paths preserved** |
-| Text and snippets | 40 chars | **Unlimited** |
-| Paired devices | 1 | **Unlimited** |
-| Auto-accept from paired peers | ✕ | **✓** |
-| Background listening | ✕ | **✓** |
-| Receiving from anyone | **Unlimited** | **Unlimited** |
-
-### Get it
+## Products
 
 | | | |
 |:--|:--|:--|
-| 🪟 **Windows 10 / 11** | Installer or portable ZIP | [**Releases →**](https://github.com/thisma-labs/beside/releases/latest) |
-| 🤖 **Android 8.0+** | Signed APK (arm64) | [**Releases →**](https://github.com/thisma-labs/beside/releases/latest) |
-| 💎 **Beside Pro** | Lifetime license | [**Gumroad →**](https://thismalabs.gumroad.com/l/beside-pro) · [itch.io](https://thisma-labs.itch.io/beside) |
-| 📦 **Mirror** | | [SourceForge →](https://sourceforge.net/projects/beside-app/) |
+| **•—◎ Beside**<br/><sub>v0.1.0 · shipping</sub> | Private file, folder and text sharing between Windows and Android, over your own Wi-Fi. Mutual TLS 1.3, no cloud, no accounts. | [Repo](https://github.com/thisma-labs/beside) · [Download](https://github.com/thisma-labs/beside/releases/latest) · [Get Pro](https://thismalabs.gumroad.com/l/beside-pro) |
+| **▓▓▓▓▓▓▓▓**<br/><sub>in the lab</sub> | Something new is being built. Details when it is ready. | Follow the org to hear first |
 
-Every release ships with `SHA256SUMS.txt`, so you can verify what you run.
+## Built with
 
-## How we build
+![Flutter](https://img.shields.io/badge/Flutter-UI-02569B?style=flat-square&logo=flutter&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-core-dea584?style=flat-square&logo=rust&logoColor=white) ![TLS](https://img.shields.io/badge/TLS-1.3-10b981?style=flat-square) ![mDNS](https://img.shields.io/badge/mDNS-discovery-6366f1?style=flat-square) ![Cloudflare](https://img.shields.io/badge/Cloudflare-Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-10|11-0078D4?style=flat-square&logo=windows&logoColor=white) ![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white)
 
-```text
-local-first    your devices talk to each other, not to our servers
-private         no accounts, no telemetry, nothing to leak
-verifiable      signed releases, published checksums, a real security policy
-small           a 12 MB installer, flat memory, no background bloat
-```
+## Get in touch
 
-## Say hello
+- 🐛 **Bugs and ideas:** [open an issue](https://github.com/thisma-labs/beside/issues)
+- 🔒 **Security reports:** see the [security policy](https://github.com/thisma-labs/beside/blob/main/SECURITY.md)
+- 🛒 **Store:** [thismalabs.gumroad.com](https://thismalabs.gumroad.com)
+- ⭐ **Follow the org** to see what we ship next
 
-- 🐛 Found a bug? [Open an issue](https://github.com/thisma-labs/beside/issues)
-- 🔒 Security report? Read [`SECURITY.md`](https://github.com/thisma-labs/beside/blob/main/SECURITY.md)
-- ⭐ Like Beside? A star on [the repo](https://github.com/thisma-labs/beside) helps more than you'd think
+<br/>
 
 <div align="center">
 
